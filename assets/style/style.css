@@ -29,6 +29,28 @@ button {
 	padding: 0 10px;
 	margin: 0 auto;
 }
+/* HEADER */
+.header{
+	height: 60px;
+	background-color: var(--dark);
+color: var(--light);
+}
+
+
+.header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.header__logo{
+font-size: 28px;
+}
+.header__link{
+	font-size: 22px;
+	margin-left: 15px ;
+}
+/* HEADER */
 
 /* HERO SECTION */
 .hero {
