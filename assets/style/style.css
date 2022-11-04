@@ -1,0 +1,95 @@
+@import "./fonts.css";
+
+:root {
+	--dark: rgb(6, 3, 36);
+	--light: rgb(233, 231, 231);
+}
+
+/* BASE CONFIG */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+button {
+	background: none;
+	border: none;
+}
+/* BASE CONFIG */
+
+.container {
+	max-width: 1120px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+/* HERO SECTION */
+.hero {
+	position: relative;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 80px 0;
+	background: url("../images/bg.jfif") no-repeat center/cover;
+}
+.hero::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.5);
+}
+.hero__title {
+	position: relative;
+	z-index: 1;
+	font-size: 70px;
+	text-transform: uppercase;
+	color: var(--light);
+}
+.hero__subtitle {
+	position: relative;
+	z-index: 1;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: var(--light);
+}
+/* HERO SECTION */
+.films {
+	padding: 80px 0;
+}
+.films__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	row-gap: 40px;
+	column-gap: 30px;
+}
+.films__card {
+
+}
+.films__img {
+	width: 100%;
+	height: 300px;
+}
+.films__img img {
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+.films__title {
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 15px;
+	font-size: 24px;
+}
